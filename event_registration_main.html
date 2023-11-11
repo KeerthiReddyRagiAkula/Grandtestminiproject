@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Event Registration</title>
+    <link rel="icon" href="Images/SRIT-Logo.png "/>
+    <style>
+        body {
+            background-color: #fff; /* white background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: rgb(238,101,9); /* Dark background for header */
+            color: #fff; /* white text color for header */
+            text-align: center;
+            padding: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect for header */
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect for the content container */
+        }
+
+        .form-container {
+            padding: 5px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: rgb(238,101,9); /* Orange submit button color */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: rgb(238,101,9)/* Hover color for the submit button */
+        }
+        .marquee {
+            font-size: 24px;
+            color: #fff;
+        }
+        .marquee-container {
+            text-align: center;
+            background-color: rgb(238,101,9);
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+        }
+        a:hover{
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <marquee direction="left">College Event Registration</marquee>
+        </h1>
+    </div>
+    <div class="container">
+        <strong><h2>Welcome to our college event!</h2></strong>
+        <div class="form-container">
+            <h2>Event Registration Form</h2>
+            <form action="registration_success.html" onsubmit="return validateRegistrationForm(this);">
+                <strong> Name: <input type="text" name="name"> <br>
+                Email: <input type="email" name="email"> <br>
+                Student ID: <input type="text" name="studentID"> <br>
+                Branch:</strong><br>
+                <input type="radio" Name="Department" value="ECE">ECE<br>
+                <input type="radio" Name="Department" value="EEE">EEE<br>
+                <input type="radio" Name="Department" value="Mech">MECH<br>
+                <input type="radio" Name="Department" value="CSE">CSE<br>
+                <input type="radio" Name="Department" value="CSM">CSM<br>
+                <input type="radio" Name="Department" value="CSD">CSD<br>
+                <strong><label for="year">Year:</label></strong>
+                <select name="year" id="year">
+                <option value="">Select Year</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+                </select>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+    <div class="marquee-container">
+        <marquee class="marquee" behaviour="scroll" direction="left">
+            ****Register now for our exciting college event!!! Limited slots avaliable.Register today and join the fun****
+        </marquee>
+
+    </div>
+
+</body>
+</html>

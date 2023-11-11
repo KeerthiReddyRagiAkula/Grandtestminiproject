@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Registration form</title>
+        <link rel="icon" href="Images/SRIT-Logo.png "/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .registration_form{
+                background-color: aliceblue;
+            }
+            .header_registration_form{
+                background: rgb(238, 101, 9);
+                text-align: center;
+                color:white;
+                margin-top: 0px;
+                padding: 20px 0% 20px 0%;
+            }
+            form{
+                margin:100px 20% 0px 30%; 
+                padding: 30px 0% 10px 3%;
+                background-color: whitesmoke;
+                font-weight: bold;
+            }
+            
+            
+        </style>
+    </head>
+    <body class="registration_form">
+        <center><header><marquee direction="left" >REGISTRATION FORM</marquee></header></center>
+        <form action="Log_in_page.html" onsubmit="return validation(this)">
+            Username: <input type="text" name="username"/><br/><br/>
+            Password:<input type="password" name="password"/><br/><br/>
+            Email:<input type="email" name="email1"/><br/><br/>
+            Personal mail id:<input type="email" name="email2" id="myemails" list="mymails"/><br/><br/>
+            Phone Number: <input type="tel" name="Phonenumber" pattern="[0-9]{10}"/><br/><br/>
+            <datalist id="mymails">
+                <option value="a@gmail.com"></option>
+                <option value="b@gmail.com"></option>
+            </datalist><br/>
+            Date of Birth:<input type="date" name="date"/><br/><br/>
+            Age:<input type="number" name="age"/><br/><br/>
+            District: 
+            <select name="District">
+                <option  value="Select an option" selected disabled>select an option</option>
+                <option value="Anantapur">Anantapur</option>
+                <option value="Chittor">Chittor</option>
+                <option value="Kurnool">Kurnool</option>
+            </select><br/><br/>
+            Address:<br/>
+            <textarea name="address" placeholder="Type your address..."></textarea><br/><br/>
+            Gender:<br/><br/>
+            <input type="radio" name="gender" value="male"/>Male<br/>
+            <input type="radio" name="gender" value="female"/>Female<br/>
+            <input type="radio" name="gender" value="prefer not to say"/>prefer not  to say<br/><br/>
+            
+            Courses:<br/><br/>
+            <input type="checkbox" name="htmlCourse" value="HTML"/>Playing games<br/>
+            <input type="checkbox" name="cssCourse" value="CSS"/>Listening music<br/>
+            <input type="checkbox" name="jsCourse" value="JS"/>reading books<br/><br/>
+        <input type="submit" name="submit" style="background-color: rgb(238,101,9); color:white"/>
+        </form>
+    </body>

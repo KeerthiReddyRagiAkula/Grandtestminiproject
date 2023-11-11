@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="icon" href="Images/SRIT-Logo.png "/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            
+            .header_contact_page{
+                background: rgb(238, 101, 9);
+                text-align: center;
+                color:white;
+                margin-top: 0px;
+                padding: 20px 0% 20px 0%;
+            }
+            
+        </style>
+        
+        </head>
+    <body>
+        <center><header><marquee direction="left" >CONTACT US</marquee></header></center>
+        <form action="index.html" onsubmit="return validation(this)" class="form_lc">
+            FULL NAME: <input type="username" name="username" autofocus/><br/><br/>
+            PHONE NUMBER: <input type="tel" name="Phonenumber" pattern="[0-9]{10}"/><br/><br/>
+            EMAIL:&nbsp;<input type="email" name="email"/><br/><br/>
+            COUNTRY: 
+            <select name="Country">
+                <option value="Select a option" >Select a option</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select><br/><br/>
+            ADDRESS:<br/>
+            <textarea  rows="4" placeholder="Type your address..." name="add"></textarea><br/><br/>
+            <input type="submit" style="background-color: rgb(238,101,9); color:white"/>
+        </form>
+        
+    
+    </body>
